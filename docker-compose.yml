@@ -1,0 +1,7 @@
+services:
+  transcriber:
+    build: .
+    image: transcriber-bot
+    container_name: transcriber
+    env_file: .env
+    restart: unless-stopped
